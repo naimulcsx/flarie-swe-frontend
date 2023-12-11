@@ -24,6 +24,9 @@
     "web-vitals": "^2.1.4",
     "typescript": "^5.2.2"
   },
+  "overrides": {
+    "typescript": "^5.2.2"
+  },
   "devDependencies": {
     "eslint": "^8.51.0",
     "eslint-config-prettier": "^9.0.0",
