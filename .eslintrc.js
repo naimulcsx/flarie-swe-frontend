@@ -14,6 +14,12 @@ module.exports = {
         sourceType: 'script',
       },
     },
+    {
+      files: ['*.test.tsx'],
+      rules: {
+        '@typescript-eslint/no-empty-function': 'off',
+      },
+    },
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
