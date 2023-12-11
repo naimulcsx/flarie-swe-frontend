@@ -14,6 +14,7 @@ import { calc as cssCalc } from '@csstools/css-calc';
  *
  * // Result: 'calc(360px * 0.02222222222)'
  */
+
 export function replaceWithActualValue(cssString: string, vars: Record<string, string>): string {
   for (const key in vars) {
     cssString = cssString.replace(`var(${key})`, vars[key]);
@@ -35,6 +36,7 @@ export function replaceWithActualValue(cssString: string, vars: Record<string, s
  *
  * // Result: '8px'
  */
+
 export function calc(cssString: string, vars: Record<string, string>) {
   return cssCalc(replaceWithActualValue(cssString, vars));
 }

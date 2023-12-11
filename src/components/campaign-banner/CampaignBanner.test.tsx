@@ -1,12 +1,13 @@
 import React from 'react';
+import renderer from 'react-test-renderer';
 import { cleanup, render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
+import 'jest-styled-components';
+
 import { CampaignBanner } from './CampaignBanner';
 import { TestElement } from '../../enums/TestElement';
 import { gameConfig } from '../../config/game-config';
 import { calc } from '../../utils/calc';
-import renderer from 'react-test-renderer';
-import 'jest-styled-components';
 
 afterEach(cleanup);
 
