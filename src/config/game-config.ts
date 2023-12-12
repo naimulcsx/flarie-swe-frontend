@@ -1,7 +1,12 @@
 export const gameConfig = {
   container: {
+    // The aspect ratio of the container can be controlled dynamically by updating
+    // the 'ratio' property without the need to change any other part of the code.
+    ratio: 9 / 16,
     maxHeight: 640,
-    maxWidth: 360,
+    get maxWidth() {
+      return this.maxHeight * this.ratio;
+    },
     borderRadius: 24,
   },
   campaignBanner: {
@@ -11,6 +16,7 @@ export const gameConfig = {
     padding: 12,
     background: '#06b6d4',
     textColor: '#cffafe',
+    fontSize: 16,
   },
   startButton: {
     offsetTop: '70%',
