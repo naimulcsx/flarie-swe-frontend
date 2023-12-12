@@ -5,7 +5,7 @@ import { useWindowResize } from '../../hooks/useWindowResize';
 import { gameConfig } from '../../config/game-config';
 
 interface Props {
-  children: ReactNode;
+  children?: ReactNode;
 }
 
 export const GameBox = ({ children }: Props) => {

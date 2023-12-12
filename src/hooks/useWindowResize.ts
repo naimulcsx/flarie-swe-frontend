@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 type DimensionsTuple = [number, number];
 
 function getCurrentWidthAndHeight(): DimensionsTuple {
-  return [window.screen.width, window.screen.height];
+  return [window.innerWidth, window.innerHeight];
 }
 
 export function useWindowResize() {
